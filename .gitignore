@@ -1,0 +1,29 @@
+# 🐍 Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Data (avoid large raw files)
+data/raw/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
