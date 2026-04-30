@@ -27,3 +27,5 @@ data/raw/
 
 # Temporary files
 *.tmp
+artifacts/**/*.pkl
+artifacts/**/*.joblib
