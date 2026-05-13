@@ -4,6 +4,9 @@
 Production-style forecasting platform for analyzing and predicting time series data using classical statistical models and deep learning approaches. The project integrates automated preprocessing, model training, evaluation, and interactive Streamlit-based visualization.
 
 ---
+## Live Demo
+
+[Open Streamlit App](https://time-series-forecasting-dashboard-miwm3q4dp9cgtuzl9k7lqd.streamlit.app/)
 ## System Architecture
 
 ![System Architecture](assets/screenshots/Architecture.png)
