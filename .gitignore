@@ -29,3 +29,16 @@ data/raw/
 *.tmp
 artifacts/**/*.pkl
 artifacts/**/*.joblib
+
+# Streamlit
+.streamlit/
+
+# PyCharm
+.idea/
+
+# TensorFlow / Keras models
+*.h5
+
+# macOS metadata
+.AppleDouble
+.LSOverride
