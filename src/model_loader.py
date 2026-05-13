@@ -3,7 +3,10 @@ import joblib
 import xgboost as xgb
 from pathlib import Path
 from src.config import ARTIFACTS_DIR
-from tensorflow.keras.models import load_model
+try:
+    from tensorflow.keras.models import load_model
+except ImportError:
+    load_model = None
 
 
 def load_xgb():
@@ -24,6 +27,8 @@ def load_sarimax():
 
     return model, features
 def load_lstm():
+    if load_model is None:
+        return None
     model = load_model(ARTIFACTS_DIR / "lstm" / "model.keras")
 
     scaler = joblib.load(ARTIFACTS_DIR / "lstm" / "scaler.pkl")
