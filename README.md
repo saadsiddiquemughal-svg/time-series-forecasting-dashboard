@@ -4,6 +4,11 @@
 Production-style forecasting platform for analyzing and predicting time series data using classical statistical models and deep learning approaches. The project integrates automated preprocessing, model training, evaluation, and interactive Streamlit-based visualization.
 
 ---
+## System Architecture
+
+![System Architecture](assets/screenshots/Architecture.png)
+
+---
 
 ## Features
 - Time series preprocessing pipeline
@@ -49,10 +54,7 @@ Production-style forecasting platform for analyzing and predicting time series d
 
 ---
 
-## Results
-Add your evaluation metrics here.
-
-Example:
+## Model Performance
 
 | Model | RMSE | MAE |
 |---|---|---|
@@ -66,28 +68,36 @@ Example:
 ## Dashboard Preview
 
 ### Main Dashboard
-![Dashboard](assets/screenshots/Dashboard-%20Home.png)
+![Dashboard](assets/screenshots/Dashboard_Home.png)
 
 ### Forecast Visualization
-![Forecast](assets/screenshots/Dashboard-Forecast.png)
+![Forecast](assets/screenshots/Dashboard_Forecast.png)
 
 ### Drift Detection and Auto-Retraining 
-![Drift Detection and Auto-Retrain](assets/screenshots/Dashboard-drift%20detection%20and%20retrain.png)
+![Drift Detection and Auto-Retrain](assets/screenshots/Dashboard_drift_detection_and_retrain.png)
 ---
 
 ## Installation
 
 ```bash
 git clone https://github.com/saadsiddiquemughal-svg/time-series-forecasting-dashboard.git
+
 cd time-series-forecasting-dashboard
+
+python -m venv venv
+
+source venv/bin/activate   # Linux/Mac
+# venv\Scripts\activate    # Windows
+
 pip install -r requirements.txt
+
 streamlit run app.py
 ```
 
 ---
 
 ## Future Improvements
-- Docker deployment
-- Automated retraining pipeline
-- Cloud deployment
-- Real-time forecasting integration
+- Docker containerization
+- Cloud deployment 
+- Real-time streaming data integration
+- Multi-user dashboard support
