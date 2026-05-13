@@ -1,90 +1,93 @@
-# 📊 Time Series Forecasting Dashboard (Capstone Project)
+# Time Series Forecasting Dashboard
 
-## 🚀 Overview
-
-This project focuses on forecasting time series data using multiple models and presenting the results through an interactive Streamlit dashboard.
-
-The goal is to compare different approaches and provide an intuitive interface for exploring predictions.
+## Overview
+Production-style forecasting platform for analyzing and predicting time series data using classical statistical models and deep learning approaches. The project integrates automated preprocessing, model training, evaluation, and interactive Streamlit-based visualization.
 
 ---
 
-## 🧠 Models Used
-
-* **LSTM** (Deep Learning)
-* **SARIMAX** (Statistical Model)
-* **XGBoost** (Machine Learning)
-
----
-
-## 📈 Results
-
-Model performance is compared visually using a combined plot generated from all models.
+## Features
+- Time series preprocessing pipeline
+- Forecasting with SARIMAX, XGBoost, and LSTM
+- Interactive Streamlit dashboard
+- Model performance comparison
+- Visualization of historical and predicted trends
+- Modular project structure
 
 ---
 
-## 🖥️ Streamlit Dashboard
+## Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- TensorFlow/Keras
+- Streamlit
+- Matplotlib / Plotly
 
-Run the dashboard locally:
+---
+
+## Project Structure
+```bash
+.
+├── artifacts/
+├── assets/
+├── data/
+├── notebook/
+├── pages/
+├── scripts/
+├── src/
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## Models Used
+- SARIMAX
+- XGBoost
+- LSTM
+
+---
+
+## Results
+Add your evaluation metrics here.
+
+Example:
+
+| Model | RMSE | MAE |
+|---|---|---|
+| LSTM  | 16.12 | 13.11 |
+| SARIMAX | 10.48 | 9.4 |
+| XGBoost | 6.25 | 5.25 |
+
+
+---
+
+## Dashboard Preview
+
+### Main Dashboard
+![Dashboard](assets/screenshots/Dashboard-%20Home.png)
+
+### Forecast Visualization
+![Forecast](assets/screenshots/Dashboard-Forecast.png)
+
+### Drift Detection and Auto-Retraining 
+![Drift Detection and Auto-Retrain](assets/screenshots/Dashboard-drift%20detection%20and%20retrain.png)
+---
+
+## Installation
 
 ```bash
+git clone https://github.com/saadsiddiquemughal-svg/time-series-forecasting-dashboard.git
+cd time-series-forecasting-dashboard
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
 ---
 
-## 🔄 Reproduce Results
-
-To regenerate model comparison plots:
-
-```bash
-python scripts/all_models_comparison.py
-```
-
----
-
-## ⚙️ Setup Instructions
-
-```bash
-git clone https://github.com/saadsiddiquemughal-svg/DS_capstone_project.git
-cd DS_capstone_project
-
-python -m venv .venv
-source .venv/bin/activate   # On Linux/Mac
-# venv\Scripts\activate     # On Windows
-
-pip install -r requirements.txt
-```
-
----
-
-## 📁 Project Structure
-
-```text
-.
-├── app.py
-├── artifacts/
-├── scripts/
-├── src/
-├── pages/
-├── notebooks/
-├── assets/
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 📸 Dashboard Preview
-
-![Dashboard](assets/Dashboard.png)
-
----
-
-## 💡 Future Improvements
-
-* Deploy dashboard online
-* Add more models
-* Improve UI/UX
-
----
-
+## Future Improvements
+- Docker deployment
+- Automated retraining pipeline
+- Cloud deployment
+- Real-time forecasting integration

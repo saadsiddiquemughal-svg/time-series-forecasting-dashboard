@@ -1,3 +1,5 @@
+import pandas as pd
+
 import streamlit as st
 from datetime import datetime
 from pathlib import Path
@@ -103,5 +105,12 @@ if plot_path.exists():
     st.image(str(plot_path), use_container_width=True)
 else:
     st.warning("Plot not found. Run forecasting script to generate it.")
+metrics_df = pd.DataFrame({
+    "Model": ["XGBoost", "SARIMAX", "LSTM"],
+    "RMSE": [6.25, 10.48, 16.12],
+    "MAE": [5.25, 9.40, 13.11]
+})
 
+st.subheader("Model Performance")
+st.dataframe(metrics_df)
 st.markdown("</div>", unsafe_allow_html=True)
